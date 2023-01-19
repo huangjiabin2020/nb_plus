@@ -1,0 +1,15 @@
+server:
+  port: 8010
+  servlet:
+    context-path: /demo
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      config:
+        server-addr: @nacos-addr@
+        file-extension: yaml
+  config:
+    import:
+      - nacos:@artifactId@

@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modules>
-        <module>test_demo</module>
-        <module>test_provider</module>
-        <module>test_gateway</module>
+        <module>test-demo</module>
+        <module>test-provider</module>
+        <module>test-gateway</module>
     </modules>
     <groupId>com.nb</groupId>
     <artifactId>demo</artifactId>
@@ -25,6 +25,11 @@
         <nacos-addr>localhost:8848</nacos-addr>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.12</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter</artifactId>
