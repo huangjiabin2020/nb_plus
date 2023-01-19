@@ -16,3 +16,4 @@ spring:
       transport:
         dashboard: localhost:8999
 ```
+    sentinel使用参考: https://github.com/alibaba/Sentinel/wiki/%E6%B3%A8%E8%A7%A3%E6%94%AF%E6%8C%81#sentinelresource-%E6%B3%A8%E8%A7%A3
