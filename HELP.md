@@ -1,11 +1,18 @@
-# Getting Started
+# 一个NB的Project
+## 技术选型
+1. SpringCloud && Alibaba最新版
+2. gateway
+3. openFeign
+4. sentinel
 
-### Reference Documentation
 
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.0.2-SNAPSHOT/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.0.2-SNAPSHOT/maven-plugin/reference/html/#build-image)
-* [Cloud Bootstrap](https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/)
-
+## 配置说明
+1. sentinel的dashboard配置,直接启动官网提供的包 `java -jar sentinel-dashboard.jar --server.port=8999 `
+然后项目里指定sentinel的地址 
+```yaml
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8999
+```

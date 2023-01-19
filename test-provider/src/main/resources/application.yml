@@ -11,6 +11,9 @@ spring:
         server-addr: @nacos-addr@
         # Nacos页面的配置文件后缀 推荐yaml后缀
         file-extension: yaml
+    sentinel:
+      transport:
+        dashboard: localhost:8999
   config:
     import:
       # Nacos页面的配置文件DataId

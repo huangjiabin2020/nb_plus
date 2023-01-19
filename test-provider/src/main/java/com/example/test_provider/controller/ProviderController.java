@@ -1,5 +1,6 @@
 package com.example.test_provider.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -29,6 +30,7 @@ public class ProviderController {
     private Object myBean;
 
     @RequestMapping("/get")
+    @SentinelResource("resource")
     public Object get() {
         return useLocalCache+":"+user;
     }
